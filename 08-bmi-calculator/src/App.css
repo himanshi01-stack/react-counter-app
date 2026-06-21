@@ -1,0 +1,133 @@
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+}
+
+.calculator-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group label {
+  font-weight: 600;
+  color: #333;
+}
+
+.input {
+  padding: 12px 15px;
+  font-size: 1em;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  background: #f8f9ff;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #667eea;
+  background: white;
+}
+
+.calculate-btn {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.05em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.calculate-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+}
+
+.result {
+  padding: 30px;
+  background: #f8f9ff;
+  border-radius: 10px;
+  border-left: 5px solid #667eea;
+  text-align: center;
+}
+
+.bmi-value {
+  font-size: 3.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bmi-category {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.bmi-info {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.info-text {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cat-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.cat-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+}
+
+.reset-btn {
+  padding: 10px 20px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.reset-btn:hover {
+  background: #c0392b;
+  transform: scale(1.05);
+}

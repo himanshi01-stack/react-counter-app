@@ -1,0 +1,200 @@
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 2.5em;
+}
+
+.game-status {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.3em;
+  font-weight: 600;
+  min-height: 40px;
+}
+
+.winner-text {
+  color: #2ecc71;
+  animation: pulse 0.5s ease-in-out;
+}
+
+.draw-text {
+  color: #f39c12;
+}
+
+.current-player {
+  color: #333;
+}
+
+.current-player span {
+  color: #667eea;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.square {
+  width: 100%;
+  aspect-ratio: 1;
+  font-size: 2.5em;
+  font-weight: bold;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #333;
+}
+
+.square:hover {
+  background: #f8f9ff;
+  border-color: #667eea;
+}
+
+.square.x {
+  color: #667eea;
+  border-color: #667eea;
+  background: #f0f4ff;
+}
+
+.square.o {
+  color: #764ba2;
+  border-color: #764ba2;
+  background: #f8f4ff;
+}
+
+.square.winner {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white !important;
+  border-color: white;
+  animation: winner-animation 0.5s ease-in-out;
+}
+
+@keyframes winner-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.reset-btn {
+  width: 100%;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.05em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 25px;
+}
+
+.reset-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+}
+
+.move-history {
+  background: #f8f9ff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.move-history h3 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.moves {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.move {
+  padding: 6px 12px;
+  background: white;
+  border-radius: 20px;
+  font-size: 0.85em;
+  border: 1px solid #ddd;
+}
+
+.move-x {
+  border-left: 3px solid #667eea;
+  color: #667eea;
+}
+
+.move-o {
+  border-left: 3px solid #764ba2;
+  color: #764ba2;
+}
+
+.instructions {
+  background: #fff8e1;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #f39c12;
+}
+
+.instructions h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.instructions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.instructions li {
+  color: #555;
+  margin-bottom: 8px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.instructions li:before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #f39c12;
+  font-weight: bold;
+}
