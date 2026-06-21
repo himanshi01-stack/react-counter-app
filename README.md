@@ -1,6 +1,6 @@
 # 🚀 React Projects - 
 
-A comprehensive collection of **10 real-world React projects** from the "React JS by Chai aur Code" course. All projects are built with React 18, Vite, and modern JavaScript, organized in a monorepo structure.
+A comprehensive collection of **10 real-world React projects**. All projects are built with React 18, Vite, and modern JavaScript, organized in a monorepo structure.
 
 ## 📋 Projects Included
 
